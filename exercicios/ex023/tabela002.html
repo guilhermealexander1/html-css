@@ -12,6 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
@@ -23,19 +31,42 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #383838
+            ;
+        }
         
         td.num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+        -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
-                <th>População</th>
+                <th style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -150,10 +181,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.127</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quis tempora quos quas dolorem recusandae modi voluptatum harum, distinctio laudantium hic earum eveniet voluptatibus praesentium similique corrupti ea accusamus id Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi mollitia sequi reprehenderit quasi ducimus pariatur doloremque quas blanditiis earum, veniam quae aliquam id! Quos, esse? Distinctio placeat earum officia fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatibus. Enim nesciunt eos magni amet, voluptatum eaque aut fugiat odit tenetur. Magni omnis magnam cum, quam assumenda labore quo libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam a eligendi amet enim, iusto ex magnam velit provident, aut necessitatibus alias voluptate delectus animi consectetur? Earum odit sunt sint eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa, inventore, optio voluptatem cum eos praesentium aut architecto dignissimos iste et maiores quia nobis consectetur illo magni necessitatibus labore repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quis tempora quos quas dolorem recusandae modi voluptatum harum, distinctio laudantium hic earum eveniet voluptatibus praesentium similique corrupti ea accusamus id Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi mollitia sequi reprehenderit quasi ducimus pariatur doloremque quas blanditiis earum, veniam quae aliquam id! Quos, esse? Distinctio placeat earum officia fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatibus. Enim nesciunt eos magni amet, voluptatum eaque aut fugiat odit tenetur. Magni omnis magnam cum, quam assumenda labore quo libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam a eligendi amet enim, iusto ex magnam velit provident, aut necessitatibus alias voluptate delectus animi consectetur? Earum odit sunt sint eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa, inventore, optio voluptatem cum eos praesentium aut architecto dignissimos iste et maiores quia nobis consectetur illo magni necessitatibus labore repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quis tempora quos quas dolorem recusandae modi voluptatum harum, distinctio laudantium hic earum eveniet voluptatibus praesentium similique corrupti ea accusamus id Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi mollitia sequi reprehenderit quasi ducimus pariatur doloremque quas blanditiis earum, veniam quae aliquam id! Quos, esse? Distinctio placeat earum officia fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatibus. Enim nesciunt eos magni amet, voluptatum eaque aut fugiat odit tenetur. Magni omnis magnam cum, quam assumenda labore quo libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam a eligendi amet enim, iusto ex magnam velit provident, aut necessitatibus alias voluptate delectus animi consectetur? Earum odit sunt sint eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa, inventore, optio voluptatem cum eos praesentium aut architecto dignissimos iste et maiores quia nobis consectetur illo magni necessitatibus labore repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quis tempora quos quas dolorem recusandae modi voluptatum harum, distinctio laudantium hic earum eveniet voluptatibus praesentium similique corrupti ea accusamus id Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi mollitia sequi reprehenderit quasi ducimus pariatur doloremque quas blanditiis earum, veniam quae aliquam id! Quos, esse? Distinctio placeat earum officia fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatibus. Enim nesciunt eos magni amet, voluptatum eaque aut fugiat odit tenetur. Magni omnis magnam cum, quam assumenda labore quo libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam a eligendi amet enim, iusto ex magnam velit provident, aut necessitatibus alias voluptate delectus animi consectetur? Earum odit sunt sint eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa, inventore, optio voluptatem cum eos praesentium aut architecto dignissimos iste et maiores quia nobis consectetur illo magni necessitatibus labore repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quis tempora quos quas dolorem recusandae modi voluptatum harum, distinctio laudantium hic earum eveniet voluptatibus praesentium similique corrupti ea accusamus id Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi mollitia sequi reprehenderit quasi ducimus pariatur doloremque quas blanditiis earum, veniam quae aliquam id! Quos, esse? Distinctio placeat earum officia fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatibus. Enim nesciunt eos magni amet, voluptatum eaque aut fugiat odit tenetur. Magni omnis magnam cum, quam assumenda labore quo libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam a eligendi amet enim, iusto ex magnam velit provident, aut necessitatibus alias voluptate delectus animi consectetur? Earum odit sunt sint eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa, inventore, optio voluptatem cum eos praesentium aut architecto dignissimos iste et maiores quia nobis consectetur illo magni necessitatibus labore repudiandae!</p>
 </body>
 </html>
