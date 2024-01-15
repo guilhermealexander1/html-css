@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.titles {
+    background-color: gray;
+    color: #fff;
+    font-weight: bold;
+}
+
+.area {
+    font-weight: bold;
+}
+
+.medias {
+    background-color: gray;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.materias {
+    text-align: left;
+}
